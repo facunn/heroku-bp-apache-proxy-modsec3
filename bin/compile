@@ -31,7 +31,7 @@ APT_OPTIONS="-o debug::nolocking=true -o dir::cache=$APT_CACHE_DIR -o dir::state
 topic "Updating apt caches"
 apt-get $APT_OPTIONS update
 
-apt-get $APT_OPTIONS -y --force-yes -d install libapache-mod-security
+apt-get $APT_OPTIONS -y --force-yes -d install libapache2-modsecurity
 
 mkdir -p $BUILD_DIR/.apt
 
