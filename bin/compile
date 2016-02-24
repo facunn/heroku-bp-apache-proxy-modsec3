@@ -90,6 +90,6 @@ curl --silent --max-time 60 --location "$APACHE_URL" | tar xz
 # update config files
 cp $LP_DIR/conf/httpd.conf $APACHE_PATH/conf
 
-
-touch /app/modsec_audit.log
-tail -F /app/modsec_audit.log &
+#
+# touch /app/modsec_audit.log
+# tail -F /app/modsec_audit.log &
